@@ -1,0 +1,210 @@
+
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: white;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(120deg, #ff4b24, #ff6535);
+    min-height: 520px;
+    padding: 25px 8%;
+    color: white;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.signin {
+    background: #171717;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Hero Content */
+.hero-content {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.hero-content h1 {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.search-box input {
+    width: 280px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Service Cards */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    background: #fff;
+    color: #222;
+    width: 230px;
+    height: 145px;
+    border-radius: 20px;
+    padding: 18px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.card small {
+    display: block;
+    color: #a74737;
+    font-size: 9px;
+    margin-top: 10px;
+}
+
+.food {
+    position: absolute;
+    font-size: 55px;
+    right: 12px;
+    bottom: 5px;
+}
+
+.card span {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    background: #ff572e;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+
+/* Categories */
+.categories {
+    padding: 35px 8%;
+}
+
+.categories h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    text-align: center;
+    width: 90px;
+}
+
+.category div {
+    font-size: 45px;
+}
+
+.category p {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 23px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .category-list {
+        justify-content: center;
+    }
+}
+ 
